@@ -17,7 +17,7 @@ def length(number):
     upperBound = 10
     while True:
         if number == 0:
-            return "{} (it is a placeholder".format(numDigits)
+            return "{} (it is a placeholder)".format(numDigits)
         else:
             numDigits += 1
             if upperBound > number >= lowerBound:
@@ -55,7 +55,7 @@ def factorial(number):
         multipliedNumber = 1
     else:
         multipliedNumber = number
-        while number != 0:
+        while number != 1:
             number -= 1
             multipliedNumber *= number
     return multipliedNumber
@@ -83,9 +83,9 @@ def prime(number):
     else:
         for value in range(2,int(number**.5 + 1)):
             if number % value != 0:
-                return False
-            else:
                 return True
+            else:
+                return False
     
 
 # Number 7
